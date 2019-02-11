@@ -1,0 +1,464 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script type="text/javascript" src="myscript.js"></script>
+<script>
+        function zoom() {
+            document.body.style.zoom = "100%" 
+        }
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title> USP 800 </title>
+</head>
+<body onload="zoom()">
+<div class="head">
+<div class="main-header">
+                <div class="leftheader">
+                                <a href="http://visor.wm.com/">
+                                <img class="logo-img" src="WMwithPhLogo.png" alt="WMlogo" />
+                                </a>
+                </div>
+                <div class="rightheader">
+                                <i class="fa fa-user-o" onclick="useraccount()" id="usericon"></i>
+                                <div id="userdropdown" class="userdropdown-content">
+                                                <a href="#changepassword">Change Password</a>
+                                                <a href="#logout">Logout</a>
+                                </div>
+                                <p class="name"> First name,Last name</p>
+                </div>
+</div>
+                
+<div id="nav-menu">
+                <nav>
+                   <ul class="menulist">
+                      <li><a class="menuitem" href="USP_Home.html">Home</a></li>
+                      <li><a class="menuitem" href="USP_CM.html">Compliance Management</a></li>
+                      <li><a class="menuitem" href="USP_FR.html">Functional Risk</a></li>
+                      <li><a class="menuitem" href="">NIOSH Report</a></li>
+                      <li><a class="menuitem" href="">Help</a></li>
+                   </ul>
+                </nav>
+</div>
+</div>
+<div class="main-body">
+                <div class="CMSection1">
+                                <ul id="CM1" class="CM1">
+                                <li><a href="#" class="CMS item1" id="defaultOpen" onclick="openTab(event, 'CMS1')">Regulatory Compliance</a></li>
+                                <li><a href="#" class="CMS item2" onclick="openTab(event, 'CMS2')">Designated Person (prevent harm to patients, minimize/eliminate exposure to personnel and the environment)</a></li>
+                                <li><a href="#" class="CMS item3" onclick="openTab(event, 'CMS3')">Resources</a></td></tr>
+                                <li><a href="#">Continuous Quality Improvement (CQI), including competency assessment and documentation</a></li>
+                                <li><a href="#">Medical Surveillance: The institution</a></li>
+                                <li><a href="#">Staffing</a></li>
+                                <li><a href="#">Training</a></li>
+                                <li><a href="#">Administrative Rules (AR)</a></li>
+                                <li><a href="#">Work Processes (WP)</a></li>
+                                <li><a href="#">List of Hazardous Drugs/Types of Exposure</a></li>
+                                <li><a href="#">Assessment of Risk(A of R)</a></li>
+                                <li><a href="#">Regulatory Compliance</a></li>
+                                <li><a href="#">Designated Person (prevent harm to patients, minimize/eliminate exposure to personnel and the environment)</a></li>
+                                <li><a href="#">Resources</a></li>
+                                <li><a href="#">Continuous Quality Improvement (CQI), including competency assessment and documentation</a></li>
+                                <li><a href="#">Medical Surveillance: The institution</a></li>
+                                <li><a href="#">Staffing</a></li>
+                                <li><a href="#">Training</a></li>
+                                <li><a href="#">Administrative Rules (AR)</a></li>
+                                <li><a href="#">Work Processes (WP)</a></li>
+                                <li><a href="#">List of Hazardous Drugs/Types of Exposure</a></li>
+                                <li><a href="#">Assessment of Risk(A of R)</a></li>
+                                </ul>
+                </div>
+                <div id="CMS1" class="CMSection2 item1">
+                  <form method="get" action="USP_FR.html">
+                                <table id="headerRow">
+                                <thead>
+                                <tr>
+                                    <th class="custom_head"></th>
+                                    <th class="custom_head">Leadership</th>
+                                    <th class="custom_head">Pharmacy</th>
+                                    <th class="custom_head">Nursing</th>
+                                    <th class="custom_head">Other Depts</th>
+                                    <th class="custom_head">Fully Completed</th>
+                                    <th class="custom_head">Partially Completed</th>
+                                    <th class="custom_head">Not Completed</th>
+                                    <th class="custom_head">Documentation of existing requirements OR description of plan to meet existing requirements</th>
+                                    <th class="custom_head">Responsible Person(s)</th>
+                                    <th class="custom_head">TimeLine</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class="headrow">Qualifications</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><input type="checkbox"/></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><textarea rows="4" cols="30"></textarea></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="headrow">Training for this position</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><input type="checkbox"/></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><textarea rows="4" cols="30"></textarea></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="headrow">Develop and implement appropriate procedures</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><input type="checkbox"/></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><textarea rows="4" cols="30"></textarea></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="headrow">Oversee compliance with laws, regulations and standards</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><input type="checkbox"/></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><textarea rows="4" cols="30"></textarea></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="headrow">Understand rationale for risk prevention policies, risks to staff and patients/visitors, and risk of non-compliance</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><input type="checkbox"/></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><textarea rows="4" cols="30"></textarea></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="headrow">Qualifications</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><input type="checkbox"/></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><textarea rows="4" cols="30"></textarea></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="headrow">Training for this position</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><input type="checkbox"/></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><textarea rows="4" cols="30"></textarea></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="headrow">Develop and implement appropriate procedures</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><input type="checkbox"/></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><textarea rows="4" cols="30"></textarea></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="headrow">Oversee compliance with laws, regulations and standards</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><input type="checkbox"/></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><textarea rows="4" cols="30"></textarea></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="headrow">Understand rationale for risk prevention policies, risks to staff and patients/visitors, and risk of non-compliance</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><input type="checkbox"/></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><textarea rows="4" cols="30"></textarea></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="headrow">Qualifications</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><input type="checkbox"/></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><textarea rows="4" cols="30"></textarea></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="headrow">Training for this position</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><input type="checkbox"/></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><textarea rows="4" cols="30"></textarea></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="headrow">Develop and implement appropriate procedures</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><input type="checkbox"/></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><textarea rows="4" cols="30"></textarea></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="headrow">Oversee compliance with laws, regulations and standards</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><input type="checkbox"/></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><textarea rows="4" cols="30"></textarea></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="headrow">Understand rationale for risk prevention policies, risks to staff and patients/visitors, and risk of non-compliance</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><input type="checkbox"/></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><textarea rows="4" cols="30"></textarea></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                </tbody>
+                                </table><br><br>
+                                <input type="submit" class="submitbtn" value="Submit" /><br><br>
+                     </form>
+                  </div>
+                <div id="CMS2" class="CMSection2 item2">
+                  <form method="get" action="USP_FR.html">
+                                <table>
+                                <thead>
+                                <tr>
+                                    <th>PERSONNEL</th>
+                                    <th>PHASE OF HD CYCLE</th>
+                                    <th>RECEIVE</th>
+                                    <th>STORE</th>
+                                    <th>PREPARE</th>
+                                    <th>TRANSPORT</th>
+                                    <th>ADMIN</th>
+                                    <th>WASTE</th>
+                                    <th>SPILL CLEAN UP</th>
+                                    <th>SYSTEM COMPONENT</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class="headrow">Pharmacist</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="headrow">Pharmacy Technician</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="headrow">Nurse</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="headrow">Other HC Practioner</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="headrow">EVS Staff</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                </tbody>
+                                </table><br><br>
+                                <input type="submit" class="submitbtn" value="Submit" /><br><br>
+                     </form>
+                  </div>
+</div>
+<div class="footer-v1">
+            <div class="footer">
+                <div class="container">
+                    <div class="row">
+                        <!-- About -->
+                        <div class="col-md-3 md-margin-bottom-40">
+                            <a href="https://www.wm.com/" target="_blank">
+                                <img id="logo-footer" style="width:200px; height:60px;" class="footer-logo" src="WMFooter.png" alt="">
+                            </a>
+
+
+                            <p>Rely on our Sustainable Pharmacy<sup>&reg;</sup> solutions to deliver environmentally sound management of both hazardous and non-hazardous pharmaceutical waste. </p>
+
+                        </div><!--/col-md-3-->
+                        <!-- End About -->
+                        <!-- Latest -->
+                        <div class="col-md-3 md-margin-bottom-40">
+                            <div class="posts">
+                                <div class="headline"><h2>About Us</h2></div>
+                                <p>
+                                    PharmEcology has been the thought leader in pharmaceutical waste management since its inception
+                                    in 2000 and has pioneered both hazardous waste categorization and the implementation process
+                                    throughout the healthcare organization.
+                                </p>
+                            </div>
+                        </div><!--/col-md-3-->
+                        <!-- End Latest -->
+                        <!-- Link List -->
+                        <div class="col-md-3 md-margin-bottom-40">
+                            <div class="headline"><h2>Related Links</h2></div>
+                            <ul class="list-unstyled link-list">
+                                <li><a href="http://www.wm.com/index.jsp" target="_blank">Waste Management</a></li>
+                                <li><a href="http://www.wm.com/sustainability-services/index.jsp" target="_blank">Sustainability Services</a></li>
+                                <li><a href="https://www.wm.com/enterprise/healthcare/index.jsp" target="_blank">Healthcare Solutions</a></li>
+                                <li><a href="http://socalhealthcaresolutions.wm.com/index.jsp" target="_blank">Southern California Healthcare Solutions</a></li>
+
+                            </ul>
+                        </div><!--/col-md-3-->
+                        <!-- End Link List -->
+                        <!-- Address -->
+                        <div class="col-md-3 map-img md-margin-bottom-40">
+                            <div class="headline"><h2>Contact Us</h2></div>
+                            <address class="md-margin-bottom-40">
+                                1001 Fannin <br />
+                                Houston, TX 77002 <br />
+                                Phone: 877-247-7430 <br />
+                                Fax: 262-250-8314 <br />
+                                Email: <a href="mailto:info@pharmecology.com" style="color:#fecb00;">info@pharmecology.com</a>
+                            </address>
+                        </div><!--/col-md-3-->
+                        <!-- End Address -->
+                    </div>
+                </div>
+            </div><!--/footer-->
+
+            <div class="copyright">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p>
+                                <script>document.write(new Date().getFullYear())</script> &copy; Waste Management National Services, Inc.
+                                <a href="/Home/TOS#privacy" style="color:#fecb00;">Privacy Policy</a> | <a href="/Home/TOS" style="color:#fecb00;">Terms of Service</a>
+                            </p>
+                        </div>
+
+                        <!-- Social Links -->
+                        <!-- End Social Links -->
+                    </div>
+                </div>
+            </div><!--/copyright-->
+        </div>
+        <!--=== End Footer Version 1 ===-->
+
+
+</body>
+</html>
+<script>
+ $(document).ready(function() {
+        $('#CMS1').on('scroll', function () { 
+                        $('#headerRow .custom_head').css({'position':'relative','top':$('#CMS1').scrollTop()-1});
+                        $('#headerRow .headrow').css({'position':'relative','left':$('#CMS1').scrollLeft()-1});
+        });
+        
+    });
+</script>
+                                
